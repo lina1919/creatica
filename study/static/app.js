@@ -1,3 +1,7 @@
+//var json = require('../../assets/tips.json');
+//var document.getElementById = require('jquery');
+//console.log(json);
+
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');
 var reset = document.getElementById('reset');
@@ -13,11 +17,30 @@ var ls = document.getElementById('l_secs');
 
 var startTimer;
 var cycles = 0;
+var tips = [
+    "Repeat a positive affirmation",
+    "Practice mindful relationships",
+    "Listen to people",
+    "Pay attention to your surroundings",
+    "Slow down",
+    "Focus on the moment",
+    "Focus on an object and pay attention to your breathing",
+    "Close your eyes and focus on your breathing",
+    "Focus on the body",
+    "Go for a short nature walk",
+    "Switch off your phone for 5 minutes and dedicate this time to yourself",
+    "Practice mindful breathing",
+    "Keep a daily journal",
+    "Trust in yourself and your feelings",
+    "Be receptive and open to what you are thinking, feeling or seeing, and accept it.",
+    "Let it go, let it be."
+];
 
 start.addEventListener('click', function () {
     if (startTimer === undefined) {
         startTimer = setInterval(timer, 1000)
-    } else {
+    } 
+    else {
         alert("Timer is already running");
     }
 })
@@ -27,6 +50,7 @@ stop.addEventListener('click', function () {
     startTimer = undefined;
 })
 
+// set all timers to default values
 reset.addEventListener('click', function(){
     pm.innerText = 1;
     ps.innerText = "00";
@@ -42,25 +66,41 @@ reset.addEventListener('click', function(){
 //Start Timer Function
 function timer() {
     //Pomodoro Timer Countdown
-    if (ps.innerText != 0) {
-        ps.innerText -= 1;
-    } else if (pm.innerText != 0 && ps.innerText == 0) {
+    if (ps.innerText != 0 && pm.innerText == 0) {    // if seconds from the pomodoro timer is not 0
+        ps.innerText -= 1;      // decrease by 1 second
+    } 
+    else if (pm.innerText != 0 && ps.innerText == 0) { // minutes is not 0
         ps.innerText = 59;
         pm.innerText -= 1;
     }
 
     //Short Break Timer Countdown
     if (pm.innerText == 0 && ps.innerText == 0) {
+        
+        const alertOnce = 0;
+
+        while (alertOnce === 0) {
+            console.log(alertOnce);
+            var randomTip = tips[Math.floor(Math.random() * tips.length)];
+            //Math.floor(Math.random() * 15);
+            alert(randomTip);
+            document.innerText(randomTip)
+            alertOnce++;
+            console.log(alertOnce);
+            return;
+        }
+
         if (ss.innerText != 0) {
             ss.innerText -= 1;
-        } else if (sm.innerText != 0 && ss.innerText == 0) {
+        } 
+        else if (sm.innerText != 0 && ss.innerText == 0) {
             ss.innerText = 59;
             sm.innerText -= 1;
             cycles += 1;
         }
     }
-
-    if (cycles == 2 /*&& ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0*/) {
+    
+    if (cycles == 2) {
         if (ls.innerText != 0) {
             ls.innerText -= 1;
         }
@@ -69,6 +109,7 @@ function timer() {
             lm.innerText -= 1;
         }
 
+    
         cycles = 0;
         pm.innerText = 01;
         ps.innerText = "00";
@@ -76,20 +117,24 @@ function timer() {
         ss.innerText = "00";
         lm.innerText = 01;
         ls.innerText = "00";
-
     }
-
     //reset timer after pomodoro and short break 
     if (ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0 && cycles != 2) {
-        pm.innerText = 01;
+    
+        
+        pm.innerText = 1;
         ps.innerText = "00";
-
-        sm.innerText = 01;
+        
+        sm.innerText = 1;
         ss.innerText = "00";
+
     }
+
 }
 
 //Stop Timer Function
 function stopInterval() {
     clearInterval(startTimer);
 }
+
+
