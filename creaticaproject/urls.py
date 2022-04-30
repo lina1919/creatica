@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-
+#from spotify.views import spotify_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('study.urls')),
     path('accounts/', include('accounts.urls')),
+    path('',include('spotify.urls')), #change it later
 ]
