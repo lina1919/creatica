@@ -17,5 +17,24 @@
             </ul>
         </div>
         </header>
+        <div id="container">
+            <p id="pomodoro" class="label">Pomodoro</p><p id="shortbreak" class="label">Short Break</p><p id="longbreak" class="label">Long Break</p>
+
+            <div id="pomo-timer" class="timer">
+                <p id="p_mins">01</p><p class="semicolon">:</p><p id="p_secs">00</p>
+            </div>
+
+            <div id="long-timer" class="timer">
+                <p id="l_mins">01</p><p class="semicolon">:</p><p id="l_secs">00</p>
+            </div>
+
+            <div id="short-timer" class="timer">
+                <p id="s_mins">01</p><p class="semicolon">:</p><p id="s_secs">00</p>
+            </div>
+            <button id="start" class="btn">Start</button>
+            <button id="stop" class="btn">Stop</button>
+            <button id="reset" class="btn">Reset</button>
+        </div>
+        <script src="{% static 'app.js' %}"></script>
     </body>
 </html>
