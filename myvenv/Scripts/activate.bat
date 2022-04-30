@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\samsung\Desktop\study\myvenv
+=======
+set VIRTUAL_ENV=C:\Users\samsung\Desktop\creatica\myvenv
+>>>>>>> 57ae4f944ee25e17efa9d4e6926789dd89f7ba02
 
 if not defined PROMPT set PROMPT=$P$G
 
