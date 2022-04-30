@@ -17,7 +17,7 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color:white;
+    color: white;
     width: 100px;
     display: block;
     padding: 25px 20px;
@@ -48,9 +48,11 @@ body {
 #pomodoro {
     grid-area: 1 / 2 / 1 / 2;
 }
+
 #shortbreak {
     grid-area: 1 / 4 / 1 / 4;
 }
+
 #longbreak {
     grid-area: 1 / 3 / 1 / 3;
 }
