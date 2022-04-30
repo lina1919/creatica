@@ -66,7 +66,7 @@ function timer() {
         ls.innerText = "00";
 
     }
-    if (ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0 && cycles != 2) {
+    if (ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0 && cycles < 2) {
         pm.innerText = 01;
         ps.innerText = "00";
 
