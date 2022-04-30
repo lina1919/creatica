@@ -1,5 +1,6 @@
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');
+var reset = document.getElementById('reset');
 
 var pm = document.getElementById('p_mins');
 var ps = document.getElementById('p_secs');
@@ -22,6 +23,17 @@ start.addEventListener('click', function () {
 })
 
 stop.addEventListener('click', function () {
+    stopInterval()
+    startTimer = undefined;
+})
+
+reset.addEventListener('click', function(){
+    pm.innerText = 1;
+    ps.innerText = "00";
+    sm.innerText = 1;
+    ss.innerText = "00";
+    lm.innerText = 1;
+    ls.innerText = "00";
     stopInterval()
     startTimer = undefined;
 })
