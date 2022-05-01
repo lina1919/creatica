@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
-<body>
+<body style = "background-color:#F0E7DB">
     <header>
         <div class="navbar">
-            <ul>
+            <ul style = "background: #F4DEC2">
                 <li><a href="">Home</a></li>
                 <li><a href="{% url 'login' %}"> Login </a></li>
                 <li><a href="{% url 'signup' %}">Sign Up</a></li>
@@ -45,12 +45,11 @@
         <button id="stop" class="btn">Stop</button>
         <button id="reset" class="btn">Reset</button>
     </div>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js%22%3E"></script> -->
     <script src="{% static 'app.js' %}"></script>
+    <!-- <script type="text/javascript" src="{% static 'jquery.js' %}"> -->
+    <!-- </script> -->
     <div id = "spotify_multiplayer">
     </div>
-    <div id="tip-id"></div>
 </body>
-</header>
-</body>
-
 </html>

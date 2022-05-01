@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #F0E7DB;
 }
 
 .navbar ul {
@@ -17,20 +18,20 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: white;
+    color: black;
     width: 100px;
     display: block;
     padding: 25px 20px;
-    font-size: 15;
+    font-size: 40;
     text-align: center;
 }
 
 #container {
     height: 150px;
     width: 600px;
-    background-color: white;
+    background-color: #F0E7DB;
     margin: 0 auto;
-    border: 5px solid gray;
+    border: 5px solid #E98977;
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
