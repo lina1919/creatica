@@ -4,6 +4,10 @@ body {
     background-color: #F0E7DB;
 }
 
+.li {
+    list-style: none;
+}
+
 .navbar ul {
     list-style: none;
     padding: 0;
@@ -30,7 +34,7 @@ body {
     background: rgba(255, 255, 255, 0.632)
 }
 
-.navbar li .active {
+.navbar a:active {
     background-color: #F2B4A8;
 }
 
@@ -179,7 +183,7 @@ p {
     ;
     margin: 0 auto;
     border: 2px solid #E98977;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-right: 5%;
     display: grid;
     border-radius: 10px;
@@ -340,4 +344,41 @@ input[type="password"] {
     font-size: 15px;
     text-align: center;
     width: 60%;
+}
+
+.collapsible-header {
+    /* padding: 10px; */
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+
+    font-size: 12px;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.collapsible-body {
+    padding: 40px;
+    background-color: whitesmoke;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.text5 {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    background-color: #F0E7DB;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Balsamiq Sans"
+}
+
+.text5 li {
+    list-style: none !important;
 }

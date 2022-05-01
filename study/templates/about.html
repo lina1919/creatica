@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
-<body style = "background-color:#F0E7DB">
+<body style="background-color:#F0E7DB">
     <header>
         <div class="navbar">
-            <ul style = "background: #F4DEC2">
+            <ul style="background: #F4DEC2">
                 <li><a href="/">Home</a></li>
                 <li><a href="{% url 'login' %}"> Login </a></li>
                 <li><a href="{% url 'signup' %}">Sign Up</a></li>
@@ -20,18 +20,50 @@
         </div>
     </header>
     <div id="container3">
-        <div class="text1">
+        <div class="text5">
             <!-- <h1 align="left">About</h1> -->
-            <h2 align="center">Who are we?</h2>
-            <p align="center">
-                We are of team of 4 like-minded individuals with different backgrounds coming together to participate in the Creatica 2022 Hackathon.
-            </p>
-            <br />
-            <h2 align ="center">What is the Pomodoro Technique?</h2>
-            <p align="center">
-                The Pomodoro Technique is a time management system that enables the person to work with the time that they have rather than against it. It breaks your working session into 25 minute chunks separated by 5 minute breaks (an interval known as a pomodoro). After four pomodoros, you take a longer break of 15 minutes.
-            </p>
+            <ul class="collapsible" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>
+                        Who are we?
+                    </div>
+                    <div class="collapsible-body" style="opacity: 0.7;">
+                        <p>We are of team of 4 like-minded individuals with different backgrounds</p>
+                        <p>coming together to participate in</p>
+                        <p>the Creatica 2022 Hackathon.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>
+                        What is the Pomodoro Technique?
+                    </div>
+                    <div class="collapsible-body" style="opacity: 0.7;">
+                        <p>The Pomodoro Technique is a time management system that enables the person to work with the
+                            time</p>
+                        <p>that they have rather than against it. It breaks your working session into 25 minute chunks
+                            separated by</p>
+                        <p>5minute breaks (an interval known as a pomodoro). After four pomodoros, you take a longer
+                            break of 15 minutes.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script>
+        function collapseAll() {
+            $(".collapsible-header").removeClass(function () {
+                return "active";
+            });
+            $(".collapsible").collapsible({ accordion: true });
+            $(".collapsible").collapsible({ accordion: false });
+        }
+        function expandAll() {
+            $(".collapsible-header").addClass("active");
+            $(".collapsible").collapsible({ accordion: false });
+        }
+    </script>
 </body>
+
 </html>
