@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-AUTH_USER_MODEL = 'accounts.CustomUser'
 # Application definition
 
 INSTALLED_APPS = [
@@ -135,3 +134,5 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
