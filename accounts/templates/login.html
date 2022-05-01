@@ -5,13 +5,14 @@
 <head>
     <meta charset="UTF-8" />
     <title>Creatica</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
-<body style = "background-color:#F0E7DB">
+<body style="background-color:#F0E7DB">
     <header>
         <div class="navbar">
-            <ul style = "background: #F4DEC2">
+            <ul style="background: #F4DEC2">
                 <li><a href="/">Home</a></li>
                 <li><a href="{% url 'login' %}"> Login </a></li>
                 <li><a href="{% url 'signup' %}">Sign Up</a></li>
@@ -19,11 +20,12 @@
             </ul>
         </div>
     </header>
-<h1>login</h1>
-<form method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <button type="submit">submit</button>
-</form>
+    <h1>login</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">submit</button>
+    </form>
 </body>
+
 </html>
