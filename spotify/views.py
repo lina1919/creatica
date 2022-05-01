@@ -12,7 +12,7 @@ from .util import update_or_create_user_tokens, is_spotify_authenticated
 class AuthURL(APIView):
     # generating an url 
     #this is called from the frontend or home page
-    def get(self, request, format=None):
+    def get(self, request, fornat=None):
         scopes = 'user-read-playback-state user-modify-playback-state user-read-currently-playing'
 
         url = Request('GET', 'https://accounts.spotify.com/authorize',param = {
@@ -53,6 +53,6 @@ class IsAuthenticated(APIView):
         is_authenticated = is_spotify_authenticated(self.request.session_key)
         return Response({'status': is_authenticated}, status=status.HTTP_200_K)
 
-
+'''
 def spotify_view(request): 
-    return render(request, 'spotify.html')
+    return render(request, 'spotify.html)'''
