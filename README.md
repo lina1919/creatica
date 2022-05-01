@@ -2,6 +2,11 @@
 
 ![Snowball Logo](study/static/img/snowball.png)
 
+[![creatica 2022 hackathon snowball demo
+](https://img.youtube.com/vi/lt-gWDhBzs8)](https://www.youtube.com/watch?v=lt-gWDhBzs8&ab_channel=%EB%B0%95%EC%9C%A0%EB%A6%BC8)
+
+![Main website](https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/922/145/datas/original.jpeg)
+
 ## Created By
 
 [Tony](https://github.com/trobutlef), [Anna](https://github.com/bluebeepie), [Yurim](https://github.com/lina1919), [Binh](https://github.com/thabinhl21)
