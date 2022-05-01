@@ -55,4 +55,4 @@ class IsAuthenticated(APIView):
 
 
 def spotify_view(request): 
-    return render(request, 'spotify.html', {})
+    return render(request, 'spotify.html')
