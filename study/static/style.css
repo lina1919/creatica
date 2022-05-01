@@ -48,7 +48,7 @@ body {
 
 #container2 {
     margin: auto;
-    padding: 7.5%;
+    padding: 0%;
 }
 
 .text1 {
@@ -61,7 +61,7 @@ body {
     margin-right: 30%;
     font-family: "Balsamiq Sans"
 }
-  
+
 .text1 h1 {
     font-size: 40px;
     color: black;
@@ -96,7 +96,7 @@ body {
     margin-right: 30%;
     font-family: "Balsamiq Sans"
 }
-  
+
 .label {
     align-self: center;
     justify-self: center;
@@ -146,6 +146,7 @@ p {
 .wrapper {
     text-align: center;
 }
+
 .btn {
     margin: 0 auto;
     width: 70px;
@@ -297,7 +298,7 @@ p {
     border-color: #E98977;
     font-weight: 600;
     color: #fff;
-    width: 30%;
+    width: 60%;
     height: 30px;
     font-size: 20px;
     border: none;
@@ -319,7 +320,7 @@ input[type="password"] {
     transition: border .1s linear;
     font-size: 15px;
     text-align: center;
-    width: 30%;
+    width: 60%;
 }
 
 .form-select {
@@ -333,5 +334,5 @@ input[type="password"] {
     transition: border .1s linear;
     font-size: 15px;
     text-align: center;
-    width: 30%;
+    width: 60%;
 }
