@@ -3,11 +3,11 @@
 //console.log(json);
 
 const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll('li a').forEach(link => {
+/*const navLinks = document.querySelectorAll('li a').forEach(link => {
     if (link.href.include(`${activePage}`)){
         link.classList.add('active');
     }
-})
+})*/
 
 var start = document.getElementById('start');
 var stop = document.getElementById('stop');

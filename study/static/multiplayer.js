@@ -52,7 +52,8 @@ function clearInfo(){
 spotify_btn.addEventListener('click', function(){
     authenticateSpotify();
     getCurrentSong();
-    console.log(song); //output the data on the console browser
+    //console.log(song); //output the data on the console browser
+    console.log(song.image_url);
 })
 
 
