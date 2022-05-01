@@ -31,8 +31,8 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 # Application definition
 
 INSTALLED_APPS = [
-    'accounts',
-    'study',
+    #'accounts',
+    #'study',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,7 +43,9 @@ INSTALLED_APPS = [
 
     #own
     'spotify.apps.SpotifyConfig',
-    'rest_framework'
+    'rest_framework',
+    'study.apps.StudyConfig',
+    'accounts.apps.AccountsConfig'
 ]
 
 MIDDLEWARE = [

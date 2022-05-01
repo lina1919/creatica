@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 #spotify linking
-app_name = 'study'
+#app_name = 'study'
 
 urlpatterns = [
     path('', views.home, name='home'),
