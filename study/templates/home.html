@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8" />
     <title>Creatica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
@@ -45,7 +48,22 @@
         <button id="stop" class="btn">Stop</button>
         <button id="reset" class="btn">Reset</button>
     </div>
-    <a href="{% url 'new' %}">add task</a>
+    <div id="container3">
+        <div class="list">
+        <h2>To Do List</h2>
+        <li><a href="{% url 'new' %}">add task</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+    </div>
+    </div>
     {% for post in posts_list %}
     <li>{{post.title}}</li>
     <a href="{% url 'delete' %}">X</a>

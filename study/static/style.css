@@ -1,3 +1,7 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +16,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    background: gray;
+    background: #F4DEC2;
     text-align: center;
 }
 
@@ -57,7 +61,7 @@ body {
 
 #container3 {
     margin: auto;
-    padding: 7.5%;
+    padding: 0%;
 }
 
 .text1 {
@@ -183,8 +187,9 @@ p {
     ;
     margin: 0 auto;
     border: 2px solid #E98977;
-    margin-top: 5%;
+    margin-top: -20%;
     margin-right: 5%;
+    /* padding: 2.5%; */
     display: grid;
     border-radius: 10px;
 }
@@ -381,4 +386,28 @@ input[type="password"] {
 
 .text5 li {
     list-style: none !important;
+}
+
+.list {
+    /* padding: 2px; */
+    position: relative;
+    background: rgba(255, 255, 255, 0.86);
+    height: 350px;
+    width: 280px;
+    /* border: solid #E98977; */
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.list h2 {
+    background: #E98977;
+    color: black;
+    padding: 10px 20px;
+    font-weight: 600px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.list li {
+    color: black;
 }
