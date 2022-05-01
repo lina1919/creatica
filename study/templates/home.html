@@ -15,7 +15,7 @@
                 <li><a href="">Home</a></li>
                 <li><a href="{% url 'login' %}"> Login </a></li>
                 <li><a href="{% url 'signup' %}">Sign Up</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'study:about' %}">About</a></li>
             </ul>
         </div>
     </header>
@@ -45,7 +45,7 @@
         <button id="stop" class="btn">Stop</button>
         <button id="reset" class="btn">Reset</button>
     </div>
-    <a href="{% url 'new' %}">add task</a>
+    <a href="{% url 'study:new' %}">add task</a>
     {% for post in posts_list %}
     <li>{{post.title}}</li>
     <a href="{% url 'delete' %}">X</a>

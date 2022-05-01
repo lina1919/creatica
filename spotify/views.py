@@ -57,3 +57,5 @@ class IsAuthenticated(APIView):
         return Response({'status': is_authenticated}, status=status.HTTP_200_OK)
 
 
+
+
