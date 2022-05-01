@@ -1,4 +1,4 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -417,4 +417,14 @@ input[type="password"] {
 
 .list li {
     color: black;
+}
+
+footer {
+    height: 75px;
+    background-color: #F4DEC2;
+    text-align: center;
+    line-height: 35px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
 }
