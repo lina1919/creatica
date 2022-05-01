@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Creatica</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body style = "background-color:#F0E7DB">
+    <header>
+        <div class="navbar">
+            <ul style = "background: #F4DEC2">
+                <li><a href="">Home</a></li>
+                <li><a href="{% url 'login' %}"> Login </a></li>
+                <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="container">
+        <p id="pomodoro" class="label">Pomodoro</p>
+        <p id="shortbreak" class="label">Short Break</p>
+        <p id="longbreak" class="label">Long Break</p>
+
+        <div id="pomo-timer" class="timer">
+            <p id="p_mins">25</p>
+            <p class="semicolon">:</p>
+            <p id="p_secs">00</p>
+        </div>
+
+        <div id="long-timer" class="timer">
+            <p id="l_mins">15</p>
+            <p class="semicolon">:</p>
+            <p id="l_secs">00</p>
+        </div>
+
+        <div id="short-timer" class="timer">
+            <p id="s_mins">05</p>
+            <p class="semicolon">:</p>
+            <p id="s_secs">00</p>
+        </div>
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Stop</button>
+        <button id="reset" class="btn">Reset</button>
+    </div>
+    <a href="{% url 'new' %}">add task</a>
+    {% for post in posts_list %}
+    <li>{{post.title}}</li>
+    <a href="{% url 'delete' %}">X</a>
+    {% endfor %}
+    <script src="{% static 'app.js' %}"></script>
+    <div id="spotify_multiplayer">
+        
+        <img class="sp" src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-logo-horizontal-white-20.png"/>
+        
+        <img class="profile" src="{%static "img/lofi.jpeg"%}"/>
+
+        <h2 class="title">
+            Cabin In The Forest
+        </h2>
+        <h3 class="artist">
+            xander.
+        </h3>
+
+        <div class="bar">
+            <div class="progress-bar">
+            </div>
+        </div>
+
+        <div class="play-buttons">
+            <img class="play" src="{%static "img/backward.png"%}"/>
+            <img class="play" src="{%static "img/play.png"%}"/>
+            <img class="play" src="{%static "img/skip-button.png"%}"/>
+        </div>
+
+        <button id="spotify-btn-login" class="spotify-login" type="submit"> Login </button>
+        <script src="{% static 'multiplayer.js' %}"></script>
+    </div>
+</body>
+
+
+</html>
