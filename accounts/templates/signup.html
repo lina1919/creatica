@@ -19,11 +19,17 @@
             </ul>
         </div>
     </header>
-<h1>signup</h1>
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">submit</button>
-</form>
+    <div id="container2">
+        <div class="text3">
+            <h1 align = "center">signup</h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <div class="wrapper">
+                    <button type="submit">submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
