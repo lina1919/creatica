@@ -111,7 +111,7 @@ function timer() {
     }
     
     //console.log(cycles);
-    if (cycles == 2 && ps.innerText === "0" && pm.innerText === "0" && ss.innerText === "0" 
+    if (cycles == 4 && ps.innerText === "0" && pm.innerText === "0" && ss.innerText === "0" 
         && sm.innerText === "0" /*&& lm.innerText != 0*/) {
         //console.log('Hello');
         if (ls.innerText != 0) {
@@ -144,7 +144,7 @@ function timer() {
 
     //reset timer after pomodoro and short break 
     if (ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && 
-        lm.innerText != 0 && cycles != 2) {
+        lm.innerText != 0 && cycles != 4) {
         
         pm.innerText = 25;
         ps.innerText = "00";
