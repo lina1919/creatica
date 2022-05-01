@@ -34,7 +34,7 @@ body {
     background: rgba(255, 255, 255, 0.632)
 }
 
-.navbar li .active {
+.navbar a:active {
     background-color: #F2B4A8;
 }
 
@@ -183,7 +183,7 @@ p {
     ;
     margin: 0 auto;
     border: 2px solid #E98977;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-right: 5%;
     display: grid;
     border-radius: 10px;
