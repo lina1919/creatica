@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8" />
     <title>Creatica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
@@ -21,70 +24,70 @@
     </header>
     <div id="container2">
         <div class="text2">
-    <h1>signup</h1>
-    <form method="POST">
-        {% csrf_token %}
-        <p><label for="id_username"></label>
-            <input type="text" name="username" maxlength="150" autofocus="" required="" id="id_username"
-                class="form-control my-input" placeholder="Enter your id" width : 20px>
-        </p>
+            <h1>signup</h1>
+            <form method="POST">
+                {% csrf_token %}
+                <p><label for="id_username"></label>
+                    <input type="text" name="username" maxlength="150" autofocus="" required="" id="id_username"
+                        class="form-control my-input" placeholder="Enter your id" width : 20px>
+                </p>
 
-        <p><label for="id_password1"></label>
-            <input type="password" name="password1" autocomplete="new-password" required="" id="id_password1"
-                class="form-control my-input" placeholder="Enter your password" width : 20px>
-        </p>
+                <p><label for="id_password1"></label>
+                    <input type="password" name="password1" autocomplete="new-password" required="" id="id_password1"
+                        class="form-control my-input" placeholder="Enter your password" width : 20px>
+                </p>
 
-        <p><label for="id_password2"></label>
-            <input type="password" name="password2" autocomplete="new-password" required="" id="id_password2"
-                class="form-control my-input" placeholder="Confirm your password" width : 20px>
-        </p>
-        <p><label for="id_useremail"></label>
-            <input type="email" name="useremail" maxlength="128" required="" id="id_useremail"
-                class="form-control my-input" placeholder="Enter your Email" width : 20px>
-        </p>
-        <p><label for="id_firstname"></label>
-            <input type="text" name="firstname" maxlength="100" required="" id="id_firstname"
-                class="form-control my-input" placeholder="Enter your first name" width : 20px>
-        </p>
+                <p><label for="id_password2"></label>
+                    <input type="password" name="password2" autocomplete="new-password" required="" id="id_password2"
+                        class="form-control my-input" placeholder="Confirm your password" width : 20px>
+                </p>
+                <p><label for="id_useremail"></label>
+                    <input type="email" name="useremail" maxlength="128" required="" id="id_useremail"
+                        class="form-control my-input" placeholder="Enter your Email" width : 20px>
+                </p>
+                <p><label for="id_firstname"></label>
+                    <input type="text" name="firstname" maxlength="100" required="" id="id_firstname"
+                        class="form-control my-input" placeholder="Enter your first name" width : 20px>
+                </p>
 
-        <p><label for="id_lastname"></label>
-            <input type="text" name="lastname" maxlength="100" required="" id="id_lastname"
-                class="form-control my-input" placeholder="Enter your last name" width : 20px>
-        </p>
+                <p><label for="id_lastname"></label>
+                    <input type="text" name="lastname" maxlength="100" required="" id="id_lastname"
+                        class="form-control my-input" placeholder="Enter your last name" width : 20px>
+                </p>
 
-        <p><label for="id_usertimezone"></label>
-            <select name="usertimezone" id="id_usertimezone" class="form-select form-select-sm">
-                <option selected>select your time zone</option>
+                <p><label for="id_usertimezone"></label>
+                    <select name="usertimezone" id="id_usertimezone" class="form-select form-select-sm">
+                        <option selected>select your time zone</option>
 
-                <option value="1">GMT</option>
+                        <option value="1">GMT</option>
 
-                <option value="2">UTC</option>
+                        <option value="2">UTC</option>
 
-                <option value="3">ECT</option>
+                        <option value="3">ECT</option>
 
-                <option value="4">EET</option>
+                        <option value="4">EET</option>
 
-                <option value="5">MET</option>
+                        <option value="5">MET</option>
 
-                <option value="6">CTT</option>
+                        <option value="6">CTT</option>
 
-                <option value="7">JST</option>
+                        <option value="7">JST</option>
 
-                <option value="8">ACT</option>
+                        <option value="8">ACT</option>
 
-                <option value="9">PST</option>
+                        <option value="9">PST</option>
 
-                <option value="10">CST</option>
+                        <option value="10">CST</option>
 
-                <option value="11">EST</option>
+                        <option value="11">EST</option>
 
-            </select>
-        </p>
+                    </select>
+                </p>
 
 
-        <button type="submit" class="button1">Sign Up</button>
-    </form>
-    </div>
+                <button type="submit" class="button1">Sign Up</button>
+            </form>
+        </div>
     </div>
 </body>
 

@@ -8,6 +8,7 @@ var spotify_btn = document.getElementById('spotify-btn-login');
 
 var spotifyAuthenticated= false;
 
+var song = {};
 
 function authenticateSpotify() {
     //request to the backend
@@ -23,12 +24,35 @@ function authenticateSpotify() {
         }
     });
 }
+
+function getCurrentSong(){
+    var i = 0;
+    fetch("/spotify/current-song")
+    .then((response) => {
+        if (!response.ok) {
+          return {};
+        } else {
+          return response.json();
+        }
+      })
+      .then((data) => {
+        song[++i] = data;
+        //console.log(data);
+      });
+}
+
+function getInfo(){
+    interval = setInterval(getCurrentSong, 1000);
+}
+function clearInfo(){
+    clearInterval(interval);
+}
+
+
 spotify_btn.addEventListener('click', function(){
-    if(spotifyAuthenticated == true){
-        spotify_btn.style.display = 'none';
-    }else{
-        authenticateSpotify();
-    }
+    authenticateSpotify();
+    getCurrentSong();
+    alert(song);
 })
 
 

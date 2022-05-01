@@ -5,13 +5,16 @@
 <head>
     <meta charset="UTF-8" />
     <title>Creatica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
-<body style = "background-color:#F0E7DB">
+<body style="background-color:#F0E7DB">
     <header>
         <div class="navbar">
-            <ul style = "background: #F4DEC2">
+            <ul style="background: #F4DEC2">
                 <li><a href="">Home</a></li>
                 <li><a href="{% url 'login' %}"> Login </a></li>
                 <li><a href="{% url 'signup' %}">Sign Up</a></li>
@@ -45,17 +48,33 @@
         <button id="stop" class="btn">Stop</button>
         <button id="reset" class="btn">Reset</button>
     </div>
-    <a href="{% url 'study:new' %}">add task</a>
+    <div id="container3">
+        <div class="list">
+        <h2>To Do List</h2>
+        <li><a href="{% url 'study:new' %}">add task</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+        <br />
+        <li><a>_____________________</a></li>
+    </div>
+    </div>
     {% for post in posts_list %}
     <li>{{post.title}}</li>
     <a href="{% url 'delete' %}">X</a>
     {% endfor %}
     <script src="{% static 'app.js' %}"></script>
     <div id="spotify_multiplayer">
-        
-        <img class="sp" src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-logo-horizontal-white-20.png"/>
-        
-        <img class="profile" src="{%static "img/lofi.jpeg"%}"/>
+
+        <img class="sp"
+            src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-logo-horizontal-white-20.png" />
+
+        <img class="profile" src="{%static "/img/lofi.jpeg"%}" />
 
         <h2 class="title">
             Cabin In The Forest
@@ -70,9 +89,9 @@
         </div>
 
         <div class="play-buttons">
-            <img class="play" src="{%static "img/backward.png"%}"/>
-            <img class="play" src="{%static "img/play.png"%}"/>
-            <img class="play" src="{%static "img/skip-button.png"%}"/>
+            <img class="play" src="{%static "/img/backward.png"%}" />
+            <img class="play" src="{%static "/img/play.png"%}" />
+            <img class="play" src="{%static "/img/skip-button.png"%}" />
         </div>
         <button id="spotify-btn-login" class="spotify-login" type="submit"> Login </button>
         <script src="{% static 'multiplayer.js' %}"></script>

@@ -65,10 +65,11 @@ class CurrentSong(APIView):
         else:
             return Response({}, status=status.HTTP_404_NOT_FOUND)
         host = room.host'''
-        host = 'uozqh0nen6yrsr00h38pw1zufr7u69ci' # test
+        host = self.request.session.session_key#'uozqh0nen6yrsr00h38pw1zufr7u69ci' # test
         endpoint = "player/currently-playing"
         response = execute_spotify_api_request(host, endpoint)
-
+        print(response)
+        
         if 'error' in response or 'item' not in response:
             return Response({}, status=status.HTTP_204_NO_CONTENT)
 
@@ -98,4 +99,4 @@ class CurrentSong(APIView):
             'id': song_id
         }
 
-        return Response(song, status=status.HTTP_200_OK)
+        return Response(response, status=status.HTTP_200_OK)
