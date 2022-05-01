@@ -6,13 +6,14 @@
     <meta charset="UTF-8" />
     <title>Creatica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
 <body style="background-color:#F0E7DB">
     <header>
+        <a href="/"><img class="logo" src="{%static "/img/snowball.png"%}" /></a>
         <div class="navbar">
             <ul style="background: #F4DEC2">
                 <li><a href="/">Home</a></li>
@@ -47,6 +48,20 @@
                             separated by</p>
                         <p>5minute breaks (an interval known as a pomodoro). After four pomodoros, you take a longer
                             break of 15 minutes.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="mdi-navigation-chevron-right"></i>
+                        The privacy policy
+                    </div>
+                    <div class="collapsible-body" style="opacity: 0.7;">
+                        <p>We respect our user’s data privacy rights and we do not and will not sell our user’s data.
+                        </p>
+                        <p>At no time will we be sharing our user’s data.</p>
+                        <p>Our web application respect the 5 basic human values; Truth, Right Conduct, Peace, Love and
+                            Nonviolence.</p>
+                        <p>This is safe space for our users and our goal is to provide our users a safe space to enjoy
+                            music and to study.</p>
                     </div>
                 </li>
             </ul>

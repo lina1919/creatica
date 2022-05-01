@@ -6,13 +6,14 @@
     <meta charset="UTF-8" />
     <title>Creatica</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
 <body style="background-color:#F0E7DB">
     <header>
+        <a href="/"><img class="logo" src="{%static "/img/snowball.png"%}" /></a>
         <div class="navbar">
             <ul style="background: #F4DEC2">
                 <li><a href="">Home</a></li>
@@ -50,23 +51,23 @@
     </div>
     <div id="container3">
         <div class="list">
-        <h2>To Do List</h2>
-        <li><a href="{% url 'study:new' %}">add task</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-    </div>
+            <h2>To Do List</h2>
+            <li><a href="{% url 'study:new' %}">add task</a></li>
+            <br />
+            <li><a>_____________________</a></li>
+            <br />
+            <li><a>_____________________</a></li>
+            <br />
+            <li><a>_____________________</a></li>
+            <br />
+            <li><a>_____________________</a></li>
+            <br />
+            <li><a>_____________________</a></li>
+        </div>
     </div>
     {% for post in posts_list %}
     <li>{{post.title}}</li>
-    <a href="{% url 'delete' %}">X</a>
+    <a href="{% url 'study:delete' %}">X</a>
     {% endfor %}
     <script src="{% static 'app.js' %}"></script>
     <div id="spotify_multiplayer">
@@ -98,5 +99,10 @@
     </div>
 </body>
 
+<footer>
+    Creatica Hackathon 2022
+    <br>
+    <p style="font-size:11px">Tony Anna Yurim Binh</p>
+</footer>
 
 </html>

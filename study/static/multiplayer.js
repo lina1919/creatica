@@ -52,7 +52,7 @@ function clearInfo(){
 spotify_btn.addEventListener('click', function(){
     authenticateSpotify();
     getCurrentSong();
-    alert(song);
+    console.log(song); //output the data on the console browser
 })
 
 
