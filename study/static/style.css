@@ -102,3 +102,15 @@ p {
 #stop {
     grid-area: 3 / 4 / 3 / 4;
 }
+
+#spotify_multiplayer {
+    height: 350px;
+    width: 270px;
+    background-color: #202023;    ;
+    margin: 0 auto;
+    border: 2px solid #E98977;
+    margin-top: 10%;
+    margin-right: 5%;
+    display: grid;  
+    border-radius: 5px;
+}
