@@ -59,11 +59,11 @@ stop.addEventListener('click', function () {
 
 // set all timers to default values
 reset.addEventListener('click', function(){
-    pm.innerText = 1;
+    pm.innerText = 25;
     ps.innerText = "00";
-    sm.innerText = 1;
+    sm.innerText = 5;
     ss.innerText = "00";
-    lm.innerText = 1;
+    lm.innerText = 15;
     ls.innerText = "00";
     stopInterval()
     startTimer = undefined;
@@ -86,7 +86,7 @@ function timer() {
     //Short Break Timer Countdown
     if (pm.innerText === "0" && ps.innerText === "0") {
 
-        if (sm.innerText === "0" && ss.innerText === "59"){
+        if (sm.innerText === "4" && ss.innerText === "59"){
 
         //console.log('Hello');
         var randomTip = tips[Math.floor(Math.random() * tips.length)];
@@ -103,7 +103,7 @@ function timer() {
         }
     }
     
-    console.log(cycles);
+    //console.log(cycles);
     if (cycles == 2 && ps.innerText === "0" && pm.innerText === "0" && ss.innerText === "0" 
         && sm.innerText === "0" /*&& lm.innerText != 0*/) {
         //console.log('Hello');
@@ -117,11 +117,11 @@ function timer() {
 
         else if (lm.innerText === "0" && ls.innerText === "0") {
             cycles = 0;
-            pm.innerText = 1;
+            pm.innerText = 25;
             ps.innerText = "00";
-            sm.innerText = 1;
+            sm.innerText = 5;
             ss.innerText = "00";
-            lm.innerText = 1;
+            lm.innerText = 15;
             ls.innerText = "00";
         }
     
@@ -139,14 +139,14 @@ function timer() {
     if (ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && 
         lm.innerText != 0 && cycles != 2) {
         
-        pm.innerText = 1;
+        pm.innerText = 25;
         ps.innerText = "00";
         
-        sm.innerText = 1;
+        sm.innerText = 5;
         ss.innerText = "00";
 
         
-        lm.innerText = 1;
+        lm.innerText = 15;
         ls.innerText = "00";
 
     }
