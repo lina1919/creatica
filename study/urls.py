@@ -1,10 +1,10 @@
 from django.urls import path
-from . import views
+from .views import home, about
 
 #spotify linking
 #app_name = 'study'
 
 urlpatterns = [
-    path('', views.home, name='home'),
-    path('about', views.about, name='about')
+    path('', home, name='home'),
+    path('about', about, name='about')
 ]
