@@ -51,6 +51,11 @@ body {
     padding: 0%;
 }
 
+#container3 {
+    margin: auto;
+    padding: 7.5%;
+}
+
 .text1 {
     text-align: center;
     color: black;
