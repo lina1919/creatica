@@ -45,10 +45,7 @@
         <button id="stop" class="btn">Stop</button>
         <button id="reset" class="btn">Reset</button>
     </div>
-    <a href="{% url 'new' %}">add task</a>
-    =======
     <a href="{% url 'study:new' %}">add task</a>
-    >>>>>>> b0c814bf2b2c797bf88c3b6e4cc93503d7a68e09
     {% for post in posts_list %}
     <li>{{post.title}}</li>
     <a href="{% url 'delete' %}">X</a>

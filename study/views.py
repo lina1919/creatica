@@ -17,7 +17,7 @@ def new(request):
             post = form.save(commit=False)
             post.published_date = timezone.now()
             post.save()
-            return redirect('home')
+            return redirect('/')
     else:
         form = TaskForm()
     return render(request, 'new.html',{'form':form})
@@ -25,4 +25,4 @@ def new(request):
 def delete(request):
     post = get_object_or_404(task)
     post.delete()
-    return redirect('home')
+    return redirect('/')
