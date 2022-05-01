@@ -35,8 +35,8 @@ var tips = [
     "Trust in yourself and your feelings",
     "Be receptive and open to what you are thinking, feeling or seeing, and accept it.",
     "Let it go, let it be."
-]; /*/
-
+]; 
+*/
 start.addEventListener('click', function () {
     if (startTimer === undefined) {
         startTimer = setInterval(timer, 1000)
@@ -67,7 +67,7 @@ reset.addEventListener('click', function(){
 //Start Timer Function
 function timer() {
     //Pomodoro Timer Countdown
-    if (ps.innerText != 0 /*&& pm.innerText == 0 */) {    // if seconds from the pomodoro timer is not 0
+    if (ps.innerText != 0) {    // if seconds from the pomodoro timer is not 0
         ps.innerText -= 1;      // decrease by 1 second
     } 
     else if (pm.innerText != 0 && ps.innerText == 0) { // minutes is not 0
@@ -92,6 +92,13 @@ function timer() {
         }
         */
 
+        
+        /*
+        var randomTip = tips[Math.floor(Math.round() * tips.length)];
+        displayTip = document.getElementById('tip-id');
+        displayTip.innerHTML = randomTip;
+        */
+
         if (ss.innerText != 0) {
             ss.innerText -= 1;
         } 
@@ -102,7 +109,7 @@ function timer() {
         }
     }
     
-    if (cycles >= 2 && ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0) {
+    if (cycles == 2 && ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0) {
         if (ls.innerText != 0) {
             ls.innerText -= 1;
         }
@@ -121,8 +128,7 @@ function timer() {
         ls.innerText = "00";
     }
     //reset timer after pomodoro and short break 
-    if (ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0 && cycles < 2) {
-    
+    if (ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0 && cycles != 2) {
         
         pm.innerText = 1;
         ps.innerText = "00";
@@ -131,7 +137,6 @@ function timer() {
         ss.innerText = "00";
 
     }
-
 }
 
 //Stop Timer Function
