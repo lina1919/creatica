@@ -1,5 +1,33 @@
-<form method="POST" class="post-form">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">save</button>
-</form>
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Creatica</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body style = "background-color:#F0E7DB">
+    <header>
+        <div class="navbar">
+            <ul style = "background: #F4DEC2">
+                <li><a href="">Home</a></li>
+                <li><a href="{% url 'login' %}"> Login </a></li>
+                <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="container2">
+        <div class="text2">
+            <form method="POST" class="post-form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">save</button>
+            </form>
+        </div>
+</div>
+</body>
+</html>
