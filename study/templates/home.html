@@ -45,12 +45,16 @@
         <button id="stop" class="btn">Stop</button>
         <button id="reset" class="btn">Reset</button>
     </div>
+    <a href="{% url 'new' %}">add task</a>
+    {% for post in posts_list %}
+    <li>{{post.title}}</li>
+    <a href="{% url 'delete' %}">X</a>
+    {% endfor %}
     <script src="{% static 'app.js' %}"></script>
-    <div id = "spotify_multiplayer">
-      
+    <div id="spotify_multiplayer">
+
     </div>
 </body>
-</header>
-</body>
+
 
 </html>
