@@ -8,16 +8,17 @@ var reset = document.getElementById('reset');
 
 var pm = document.getElementById('p_mins');
 var ps = document.getElementById('p_secs');
-
+// console.log("Minutes " + pm);
+// console.log("Seconds " + ps);
 var sm = document.getElementById('s_mins');
 var ss = document.getElementById('s_secs');
 
 var lm = document.getElementById('l_mins');
 var ls = document.getElementById('l_secs');
-
+ 
 var startTimer;
 var cycles = 0;
-/*
+
 var tips = [
     "Repeat a positive affirmation",
     "Practice mindful relationships",
@@ -36,7 +37,12 @@ var tips = [
     "Be receptive and open to what you are thinking, feeling or seeing, and accept it.",
     "Let it go, let it be."
 ]; 
-*/
+
+// allTips = document.getElementById('tip-id');
+// allTips.innerHTML = "Hello World";
+//document.getElementById("tip-id").innerHTML = "Hello World!";
+//$('#tip-id').text('Hello World');
+
 start.addEventListener('click', function () {
     if (startTimer === undefined) {
         startTimer = setInterval(timer, 1000)
@@ -53,11 +59,11 @@ stop.addEventListener('click', function () {
 
 // set all timers to default values
 reset.addEventListener('click', function(){
-    pm.innerText = 1;
+    pm.innerText = 25;
     ps.innerText = "00";
-    sm.innerText = 1;
+    sm.innerText = 5;
     ss.innerText = "00";
-    lm.innerText = 1;
+    lm.innerText = 15;
     ls.innerText = "00";
     stopInterval()
     startTimer = undefined;
@@ -66,6 +72,8 @@ reset.addEventListener('click', function(){
 
 //Start Timer Function
 function timer() {
+    // console.log("Minutes " + pm);
+    // console.log("Seconds " + ps);
     //Pomodoro Timer Countdown
     if (ps.innerText != 0) {    // if seconds from the pomodoro timer is not 0
         ps.innerText -= 1;      // decrease by 1 second
@@ -76,28 +84,14 @@ function timer() {
     }
 
     //Short Break Timer Countdown
-    if (pm.innerText == 0 && ps.innerText == 0) {
-        /*
-        const alertOnce = 0;
+    if (pm.innerText === "0" && ps.innerText === "0") {
 
-        while (alertOnce === 0) {
-            console.log(alertOnce);
-            var randomTip = tips[Math.floor(Math.random() * tips.length)];
-            //Math.floor(Math.random() * 15);
-            alert(randomTip);
-            document.innerText(randomTip)
-            alertOnce++;
-            console.log(alertOnce);
-            return;
+        if (sm.innerText === "4" && ss.innerText === "59"){
+
+        //console.log('Hello');
+        var randomTip = tips[Math.floor(Math.random() * tips.length)];
+        alert(randomTip);
         }
-        */
-
-        
-        /*
-        var randomTip = tips[Math.floor(Math.round() * tips.length)];
-        displayTip = document.getElementById('tip-id');
-        displayTip.innerHTML = randomTip;
-        */
 
         if (ss.innerText != 0) {
             ss.innerText -= 1;
@@ -109,7 +103,10 @@ function timer() {
         }
     }
     
-    if (cycles == 2 && ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0) {
+    //console.log(cycles);
+    if (cycles == 2 && ps.innerText === "0" && pm.innerText === "0" && ss.innerText === "0" 
+        && sm.innerText === "0" /*&& lm.innerText != 0*/) {
+        //console.log('Hello');
         if (ls.innerText != 0) {
             ls.innerText -= 1;
         }
@@ -118,23 +115,39 @@ function timer() {
             lm.innerText -= 1;
         }
 
+        else if (lm.innerText === "0" && ls.innerText === "0") {
+            cycles = 0;
+            pm.innerText = 25;
+            ps.innerText = "00";
+            sm.innerText = 5;
+            ss.innerText = "00";
+            lm.innerText = 15;
+            ls.innerText = "00";
+        }
     
-        cycles = 0;
+        /*
         pm.innerText = 01;
         ps.innerText = "00";
         sm.innerText = 01;
         ss.innerText = "00";
         lm.innerText = 01;
         ls.innerText = "00";
+        */
     }
+
     //reset timer after pomodoro and short break 
-    if (ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && lm.innerText != 0 && cycles != 2) {
+    if (ps.innerText == 0 && pm.innerText == 0 && ss.innerText == 0 && sm.innerText == 0 && 
+        lm.innerText != 0 && cycles != 2) {
         
-        pm.innerText = 1;
+        pm.innerText = 25;
         ps.innerText = "00";
         
-        sm.innerText = 1;
+        sm.innerText = 5;
         ss.innerText = "00";
+
+        
+        lm.innerText = 15;
+        ls.innerText = "00";
 
     }
 }

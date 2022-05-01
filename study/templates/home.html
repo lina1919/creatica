@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
-<body>
+<body style = "background-color:#F0E7DB">
     <header>
         <div class="navbar">
-            <ul>
+            <ul style = "background: #F4DEC2">
                 <li><a href="">Home</a></li>
                 <li><a href="{% url 'login' %}"> Login </a></li>
                 <li><a href="{% url 'signup' %}">Sign Up</a></li>
@@ -25,19 +25,19 @@
         <p id="longbreak" class="label">Long Break</p>
 
         <div id="pomo-timer" class="timer">
-            <p id="p_mins">01</p>
+            <p id="p_mins">25</p>
             <p class="semicolon">:</p>
             <p id="p_secs">00</p>
         </div>
 
         <div id="long-timer" class="timer">
-            <p id="l_mins">01</p>
+            <p id="l_mins">15</p>
             <p class="semicolon">:</p>
             <p id="l_secs">00</p>
         </div>
 
         <div id="short-timer" class="timer">
-            <p id="s_mins">01</p>
+            <p id="s_mins">05</p>
             <p class="semicolon">:</p>
             <p id="s_secs">00</p>
         </div>
@@ -78,7 +78,6 @@
         <button class="spotify-login" type="submit"> Login </button>
         
     </div>
-    <div id="tip-id"></div>
 </body>
 
 
