@@ -24,7 +24,11 @@ function authenticateSpotify() {
     });
 }
 spotify_btn.addEventListener('click', function(){
-    authenticateSpotify();
+    if(spotifyAuthenticated == true){
+        spotify_btn.style.display = 'none';
+    }else{
+        authenticateSpotify();
+    }
 })
 
 
