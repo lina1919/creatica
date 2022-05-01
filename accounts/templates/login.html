@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Creatica</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 
@@ -25,8 +25,18 @@
             <h1 align="center">login</h1>
             <form method="POST">
                 {% csrf_token %}
-                {{form.as_p}}
-                <button type="submit">submit</button>
+                <p>
+                    <label for="id_username"></label>
+                    <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username"
+                        maxlength="150" required="" id="id_username" class="form-control my-input"
+                        placeholder="username" width : 20px>
+                </p>
+                <p>
+                    <label for="id_password"></label>
+                    <input type="password" name="password" autocomplete="current-password" required="" id="id_password"
+                        class="form-control my-input" placeholder="password" width : 20px>
+                </p>
+                <button type="submit" class="button1">login</button>
             </form>
         </div>
     </div>
