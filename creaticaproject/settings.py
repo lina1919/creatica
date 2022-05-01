@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #third party
-    'jquery',
+    #'jquery',
 
     #own
     'spotify.apps.SpotifyConfig',
