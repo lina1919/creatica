@@ -8,6 +8,13 @@ body {
     background-color: #F0E7DB;
 }
 
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 1%;
+    left: 2%;
+}
+
 .li {
     list-style: none;
 }
