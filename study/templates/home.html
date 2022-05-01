@@ -48,26 +48,7 @@
         <button id="stop" class="btn">Stop</button>
         <button id="reset" class="btn">Reset</button>
     </div>
-<<<<<<< HEAD
-    <div id="container3">
-        <div class="list">
-        <h2>To Do List</h2>
-        <li><a href="{% url 'new' %}">add task</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-        <br />
-        <li><a>_____________________</a></li>
-    </div>
-    </div>
-=======
     <a href="{% url 'study:new' %}">add task</a>
->>>>>>> c4646dd9d435d66c08b2be0bf421cb7dccee73e8
     {% for post in posts_list %}
     <li>{{post.title}}</li>
     <a href="{% url 'delete' %}">X</a>
