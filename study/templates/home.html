@@ -45,11 +45,16 @@
         <button id="stop" class="btn">Stop</button>
         <button id="reset" class="btn">Reset</button>
     </div>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js%22%3E"></script> -->
+    <a href="{% url 'new' %}">add task</a>
+    {% for post in posts_list %}
+    <li>{{post.title}}</li>
+    <a href="{% url 'delete' %}">X</a>
+    {% endfor %}
     <script src="{% static 'app.js' %}"></script>
-    <!-- <script type="text/javascript" src="{% static 'jquery.js' %}"> -->
-    <!-- </script> -->
-    <div id = "spotify_multiplayer">
+    <div id="spotify_multiplayer">
+        HELLO!
     </div>
 </body>
+
+
 </html>
