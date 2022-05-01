@@ -175,5 +175,109 @@ p {
     margin-top: 10%;
     margin-right: 5%;
     display: grid;  
-    border-radius: 5px;
+    border-radius: 10px;
+}
+
+.sp{
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 20%;
+}
+.profile{
+    margin-top: 0px;
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.title{
+    margin-top: 0px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.artist{
+    margin-top: -25px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size:small;
+    font-weight: normal;
+}
+.bar{
+    margin-top: 20px;
+    width: 80%;
+    height: 10%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(217, 207, 207);
+    border-radius: 1.5em;
+}
+
+.bar .progress-bar{
+    position: absolute;
+    height: 100%;
+    background-color: rgb(186, 38, 38);
+    animation: progress-animation 5s forwards;
+}
+
+@keyframes progress-animation {
+    0% {width:0%;}
+    100% {width: 100%;}
+}
+
+.play{
+    float:left;
+    width: 10%;
+    padding:31.5px;
+}
+
+.play-buttons::after{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+.button.play {
+    width: 74px;
+    height: 74px;
+    border-style: solid;
+    border-width: 37px;
+    border-color: #202020;
+    border-width: 37px 37px 37px 37px;
+    border-color: red blue green yellow;
+    border-width: 37px 0px 37px 74px;
+    border-color: red blue green yellow;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border-width: 37px 0px 37px 74px;
+    border-color: transparent transparent transparent #202020;
+}*/
+
+.spotify-login{
+    background-color: #1ED760;
+    border-radius: 12px;
+    border: 2px solid #1ed760;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 20%;
+    height: 80%;
+    padding: 5px;
+    outline: none;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    color: white;
+}
+
+
+.spotify-login:hover {
+    box-shadow: 0 0 0 2px #12a545;
 }
