@@ -9,7 +9,6 @@
   <p align="center">
     A web application that provides the user with a virtual environment where they can focus and concentrate on a task or tasks. 
     <br />
-    <a href="https://mr-turtle.web.app/"><strong>Play game »</strong></a>
     <br />
     <br />
     <a href="https://devpost.com/software/pending-pk34gv">Devpost</a>
