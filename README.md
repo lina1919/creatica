@@ -4,11 +4,10 @@
     <img src="study/static/img/snowball.png" alt="Mr. Turtle" height="80">
   </a>
 
-  <h3 align="center">Snowball</h3>
+  <h2 align="center">Snowball</h2>
 
   <p align="center">
     A web application that provides the user with a virtual environment where they can focus and concentrate on a task or tasks. 
-    <br />
     <br />
     <a href="https://devpost.com/software/pending-pk34gv">Devpost</a>
     ·
