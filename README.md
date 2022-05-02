@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/thabinhl21/creatica">
-    <img src="study/static/img/snowball.png" alt="Mr. Turtle" height="120"></a>
+    <img src="study/static/img/snowball.png" alt="Mr. Turtle" height="150"></a>
   <h2 align="center">Snowball</h2>
   <p align="center">
     A web application that provides the user with a virtual environment where they can focus and concentrate on a task or tasks. 
@@ -30,12 +30,13 @@ Our inspiration for this web application is from personal experience and also fr
 
 ## What it does
 This web application provides the user with a virtual environment where they can focus and concentrate on a task or tasks. This has 3 main components:
-* Timer
-* Task List
-* Music
-For the timer, we specifically designed it around the Pomodoro technique. The Pomodoro technique is a time management system that enables the person to work with the time that they have rather than against it. It breaks your working session into 25 minute chunks followed by 5 minute breaks (an interval known as a pomodoro). Whenever the person's 5 minute break starts, they are given a pop-up message containing a mindfulness tip that will help them reduce stress. After 4 pomodoros, you take a longer break of 15 minutes. Users can also create a to-do list that will keep them organized with their tasks. They can also log into Spotify through the web app to enjoy some music while working, without other distractions.
+1. Timer
+2. Task List
+3. Music 
+<br />
+For the timer, we specifically designed it around the Pomodoro technique. The Pomodoro technique is a time management system that enables the person to work with the time that they have rather than against it. It breaks your working session into 25 minute chunks followed by 5 minute breaks (an interval known as a pomodoro). Whenever the person's 5 minute break starts, they are given a pop-up message containing a mindfulness tip of ways they can reduce stress. After 4 pomodoros, you take a longer break of 15 minutes. Users can also create a to-do list that will keep them organized with their tasks. They can also log into Spotify through the web app to enjoy some music while working, without other distractions.
 
-## What we used to build this
+## What we used to build it
 * Python
 * [Django](https://www.djangoproject.com/)
 * Javascript
