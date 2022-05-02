@@ -1,8 +1,11 @@
 <br />
 <p align="center">
   <a href="https://github.com/thabinhl21/creatica">
-    <img src="study/static/img/snowball.png" alt="Mr. Turtle" height="150"></a>
-  <h2 align="center">Snowball</h2>
+    <img src="study/static/img/snowball.png" alt="Snowball" height="150">
+  </a>
+  
+  <h3 align="center">Snowball</h3>
+  
   <p align="center">
     A web application that provides the user with a virtual environment where they can focus and concentrate on a task or tasks. 
     <br />
