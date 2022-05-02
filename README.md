@@ -3,9 +3,7 @@
   <a href="https://github.com/thabinhl21/creatica">
     <img src="study/static/img/snowball.png" alt="Mr. Turtle" height="80">
   </a>
-
   <h2 align="center">Snowball</h2>
-
   <p align="center">
     A web application that provides the user with a virtual environment where they can focus and concentrate on a task or tasks. 
     <br />
@@ -32,24 +30,31 @@
 Our inspiration for this web application is from personal experience and also from seeing my fellow peers struggling to focus. With the pandemic, it brought on a lot more distraction and stress, and we find it increasingly harder to focus and concentrate.
 
 ## What it does
-This web application provides the user with a virtual environment where they can focus and concentrate on a task or tasks. 
-
-For the timer, we specifically designed it around the Pomodoro technique. The Pomodoro Technique is a time management system that enables the person to work with the time that they have rather than against it. It breaks your working session into 25 minute chunks followed by 5 minute breaks (an interval known as a pomodoro). After 4 pomodoros, you take a longer break of 15 minutes. For the colour theme, we decided on one that portrayed a clean and minimalistic feeling. We want the user to feel like they are working in a calm minimalistic environment.
-
-## How we built it
-We built this using Django as our framework and HTML/CSS for the frontend. We used Javascript to build the timer and Spotify API to add music functionality to our web app. The usernames and related information are stored in a SQLite database. From our discussion as a team, we wanted to create a web based application that will help students. From all the mental and physical challenges brought on by the pandemic, we wanted to create a tool that will allow students to increase their focus and concentration. We have used similar applications before but we haven't found one that meets all of our needs. We decided to use mural to house all of our ideas, prioritized (how much of that idea we can built) and implementation. We agreed on 3 main components that we want to incorporate into the application.
+This web application provides the user with a virtual environment where they can focus and concentrate on a task or tasks. This has 3 main components:
 
 1. Timer
-1. Music
-1. To-do task list
-## Challenges we ran into
+2. Music
+3. Task List
+For the timer, we specifically designed it around the Pomodoro technique. The Pomodoro technique is a time management system that enables the person to work with the time that they have rather than against it. It breaks your working session into 25 minute chunks followed by 5 minute breaks (an interval known as a pomodoro). Whenever the person's 5 minute break starts, they are given a pop-up message containing a mindfulness tip that will help them reduce stress. After 4 pomodoros, you take a longer break of 15 minutes. Users can also create a to-do list that will keep them organized with their tasks. They can also log into Spotify through the web app to enjoy some music while working, without other distractions.
+
+## What we used to build this
+* [Python]
+* [Django](https://www.djangoproject.com/)
+* Javascript
+* HTML
+* CSS
+* [SQLite](https://www.sqlite.org/index.html)
+* [Spotify Web API](https://developer.spotify.com/documentation/web-api/)
+* [jQuery](https://jquery.com/)
+
+<!-- ## Challenges we ran into
 * Finding an optimal time to sync up in different time zones 
 * We wanted to use jQuery for a few different tasks, but had trouble integrating it with Django
 * We also had trouble extracting data from from a JSON file so we had to cut out some features that relied on those results
 * Prioritizing and organizing the task that needs to be done
-* Maintain communication with team member in different time zones
+* Maintain communication with team member in different time zones -->
 
-## Accomplishments that we're proud of
+<!-- ## Accomplishments that we're proud of
 We are proud that in the end, we were still able to include the main components to the app by the deadline, despite the technical difficulties we ran into and also not having enough time to include other features we wanted to add.
 
 ## What we learned
@@ -64,4 +69,4 @@ It is not difficult to sync up with different team members in different time zon
 6. Personal ranking system. Allows the user to beat their own record of the amount of time spent studying.
 7. Provide access to short stretching exercises during the 5 minute period.
 8. Add additional features for the to-do list: ability to add tags, group tasks together and the ability to add notes to the to-do list and drag them to specific task
-9. Ability to have study sessions with friends with the option to have voice and video
+9. Ability to have study sessions with friends with the option to have voice and video -->
